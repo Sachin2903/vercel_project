@@ -51,7 +51,7 @@ const AboutUs = (props) =>{
                             designation = {"Founder & Director"} 
                             description = { AAROH_DHOUNDIYAL_TEXT } />
 
-                <PersonalCard 
+             { /*   <PersonalCard 
                             photo = {AsmitaMishra} 
                             name = {"Asmita Mishra"}
                             designation = {"Managing Partner"} 
@@ -80,7 +80,7 @@ const AboutUs = (props) =>{
                             photo = {SiddhantBhattacharya} 
                             name = {"Siddhant Bhattacharya"}
                             designation = {"Digital Marketing Executive"} 
-                            description = { SIDDHANT_BHATTACHARYA_TEXT } />
+                            description = { SIDDHANT_BHATTACHARYA_TEXT } /> */}
             </div>
             <Footer />
         </div>
