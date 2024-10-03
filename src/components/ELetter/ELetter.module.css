@@ -1,0 +1,92 @@
+@font-face {
+    font-family: futuraBold;
+    font-weight: normal;
+    font-size: normal;
+    src: url("../../assets/Futura\ Bold.otf") format("opentype");
+}
+
+.letterE{
+    color: #ffffff;
+    font-family: futuraBold, sans-serif;
+    /* font-family: 'Lato-Regular', sans-serif; */
+    font-size: 28.04vw;
+    font-weight: 1000;
+    line-height: 70%;
+    pointer-events: none;
+}
+
+.orientDown{
+    animation: orientDown 2s forwards;
+}
+
+@keyframes orientDown{
+    from{
+        font-size: 28.04vw;
+        line-height: 70%;
+    }
+    to{
+        /* transform: translateY(38.18vh) translateX(5.17vw)   rotate(-90deg); */
+        transform: translateY(80%) translateX(45%)   rotate(-90deg);
+        font-size: 20vw;
+        line-height: 130%;
+    }
+}
+
+
+.orientUp{
+    animation: orientUp 2s forwards;
+}
+
+@keyframes orientUp{
+    from{
+        transform: translateY(80%) translateX(45%)   rotate(-90deg);
+        /* font-size: 15.63vw;  */
+        font-size: 20vw;
+        line-height: 130%;
+    } 
+    to{
+        font-size: 28.04vw;
+        line-height: 70%;
+    }
+}
+
+@media only screen and (max-width: 1279px) and (max-aspect-ratio: 1/1){
+    .letterE{
+        display: block;
+        position: relative;
+        color: #ffffff;
+        font-family: futuraBold, sans-serif;
+        font-size: 28vh;
+        font-weight: 1000;
+        line-height: 90%;
+        transform-origin: 50% 50%;
+        transform: none ; 
+        pointer-events: none;
+    }
+
+    .slideOut{
+        animation: slideOut 0.5s forwards;
+    }
+
+    @keyframes slideOut {
+        from{
+            left: 0;
+        }
+        to{
+            left: -20vh;
+        }
+    }
+
+    .slideIn{
+        animation: slideIn 0.5s forwards;
+    }
+
+    @keyframes slideIn {
+        from{
+            left: -20vh;
+        }
+        to{
+            left: 0;
+        }
+    }
+}

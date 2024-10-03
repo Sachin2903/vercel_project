@@ -1,0 +1,517 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+    overflow: hidden;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    background-color: #27343a;
+    width: 50vw;
+    padding-top: 10vh;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.text1{
+    color: #ffffff;
+    font-size: 4vw;
+    font-weight: bold;
+    padding-right: 7vw;
+}
+
+.text2{
+    padding-top: 15vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    text-align: left;
+    color: #e06f2e;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.formBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50vw;
+    padding-top: 10vh;
+    padding-left: 3vw;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.head{
+    display: block;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bold;
+    padding-bottom: 5vh;
+}
+
+.checkboxGroupHead{
+    display: block;
+    text-align: left;
+    font-size: 2vw;
+    font-weight: bold;
+
+}
+
+.checkboxGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 48vw;
+    height: 30vh;
+    padding-right: 5vw;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.checkboxList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.labels{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.labelsInput{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.checkboxLabelPair{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 16vw;
+}
+
+.inputboxGroup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding-bottom: 10vh;
+}
+
+.inputBox{
+    height: 3vh;
+    margin-top: 1vh;
+    padding: 1vh;
+    background-color: #f7f7f7;
+    border: 1px solid #353535;
+    margin-bottom: 3vh;
+    color: #7790b8;
+    font-size: 1.5vw;
+}
+
+.submitButton{
+    background-color: #000000;
+    width: fit-content;
+    padding: 1vh;
+    color: #c4c4c4;
+    font-size: 1vw;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.submitButton:hover{
+    animation: hoverAnimate 0.5s forwards;
+}
+
+@keyframes hoverAnimate{
+    from{
+        color: #c4c4c4;
+        background-color: #000000;
+    }
+    to{
+        color: #000000;
+        background-color: #c4c4c4;
+    }
+}
+
+.labelsPortrait{
+    display: none;
+}
+
+.list{
+    display: none;
+}
+
+.selectionBox{
+    display: none;
+}
+
+.selectionList{
+    position: relative;
+    height: 1px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1279px) and (max-aspect-ratio: 13/9){ /* 2nd part of 2nd condition prevents iPad in landscape mode from accessing this query. iPad seems to have the problem of considering its device-aspect-ratio to be less than 1/1 even in landscape mode. */
+
+    .description{
+        display: none;
+    }
+
+    .checkboxGroupHead{
+        display: none;
+    }
+
+    .checkboxGroup{
+        display: none;
+    }
+
+    .formBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100vw;
+        padding-top: 3vh;
+        padding-left: 3vw;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+    }
+
+    .head{
+        font-size: 10vw;
+    }
+
+    .labels{
+        text-align: left;
+        font-weight: bold;
+        font-size: 3.5vw;
+    }
+
+    .labelsInput{
+        font-size: 3vw;
+    }
+
+    .inputBox{
+        height: 6vh;
+        width: 93vw;
+        margin-top: 1vh;
+        padding: 1vh;
+        background-color: #f7f7f7;
+        border: 1px solid #353535;
+        margin-bottom: 3vh;
+        color: #7790b8;
+        text-align: left;
+        font-size: 4vw;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+    }
+
+    .selectionBox{
+        position: relative;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 6vh;
+        width: 93vw;
+        margin-top: 1vh;
+        padding: 1vh;
+        background-color: #f7f7f7;
+        border: 1px solid #353535;
+        margin-bottom: 3vh;
+        color: #7790b8;
+        text-align: left;
+        font-size: 4vw;
+        cursor: pointer;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+    }
+
+    .list{
+        display: block;
+        height: 0;
+        z-index: -1;
+        position: relative;
+        top: -3vh;
+        list-style-type: none;
+        width: 90vw;
+        padding-left: 2vw;
+        border: 1px solid #2b2a2a;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+        overflow: hidden;
+    }
+
+    .listItem{
+        text-align: left;
+        font-size: 3vw;
+        color: #7790b8;
+        padding-top: 1vh;
+        cursor: pointer;
+    }
+
+    .animateList{
+        z-index: 1;
+        animation: animateList 0.5s forwards;
+    }
+
+    @keyframes animateList {
+
+        from{
+            height: 0;
+        }
+
+        to{
+            height: 28vh;
+        }
+        
+    } 
+
+    .unAnimateList{
+        z-index: 1;
+        animation: unAnimateList 0.5s forwards;
+    }
+
+    @keyframes unAnimateList {
+
+        from{
+            height: 28vh;
+        }
+
+        to{
+            height: 0;
+            z-index: -1;
+        }
+        
+    } 
+
+    .arrow {
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        
+        /* border-top: 6px solid #ebbb44; */
+        border-top: 6px solid #000000;
+        margin-right: 3px;
+        align-self: center;
+      }
+
+    .animateArrow{
+        animation: animateArrow 0.5s forwards;
+    }
+
+    .unAnimateArrow{
+        animation: unAnimateArrow 0.5s forwards;
+    }
+
+    @keyframes animateArrow {
+        from{
+            transform: rotate(0);
+        }
+        to{
+            transform: rotate(180deg);
+        }
+    }
+
+    @keyframes unAnimateArrow {
+        from{
+            transform: rotate(180deg);
+        }
+        to{
+            transform: rotate(0);
+        }
+    }
+
+    .labelsPortrait{
+        display: block;
+        text-align: left;
+        font-weight: bold;
+        font-size: 3.5vw;
+    }
+    
+
+    .submitButton{
+        position: absolute;
+        top: 40vh;
+        background-color: #000000;
+        width: 60vw;
+        height: fit-content;
+        padding: 1vh;
+        color: #c4c4c4;
+        font-size: 5vw;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .hideInputBoxBorder{
+        border: 0;
+        outline: none;
+        background-color: #00000000;
+    }
+}
+
+@media only screen and (max-width: 1279px) and (max-aspect-ratio: 13/9) and (min-aspect-ratio: 480/854){
+    @keyframes animateList {
+
+        from{
+            height: 0;
+        }
+
+        to{
+            height: 40vh;
+        }
+        
+    } 
+
+    .unAnimateList{
+        z-index: 1;
+        animation: unAnimateList 0.5s forwards;
+    }
+
+    @keyframes unAnimateList {
+
+        from{
+            height: 40vh;
+        }
+
+        to{
+            height: 0;
+            z-index: -1;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 1279px)  and (max-aspect-ratio: 13/9) and (min-aspect-ratio: 860/969) {
+
+    .listItem{
+        font-size: 2.5vw;
+    }
+    
+    @keyframes animateList {
+
+        from{
+            height: 0;
+        }
+
+        to{
+            height: 35vh;
+        }
+        
+    } 
+
+    .unAnimateList{
+        z-index: 1;
+        animation: unAnimateList 0.5s forwards;
+    }
+
+    @keyframes unAnimateList {
+
+        from{
+            height: 35vh;
+        }
+
+        to{
+            height: 0;
+            z-index: -1;
+        }
+        
+    }
+}
+
+
+@media only screen and (min-width: 800px) and (max-width: 1279px)  and (max-aspect-ratio: 13/9){
+    .selectionBox{
+        font-size: 2.8vw;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1279px)  and (max-aspect-ratio: 13/9){
+    .selectionBox{
+        font-size: 2.5vw;
+    }
+
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1279px)  and (max-aspect-ratio: 13/9){
+    
+    .submitButton{
+        top: 50vh;
+    }
+
+}
+
+@media only screen and (max-width: 530px){
+    
+    .inputBox{
+        width: 90vw;
+    }
+
+
+    .selectionBox{
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-aspect-ratio: 3/2){ 
+    .labels{
+        height: fit-content;
+        padding-top: 1vh ;
+    }
+
+}
+
+@media only screen and (max-width: 1279px) and (min-aspect-ratio: 3/2){
+
+    .formBox{
+        padding-top: 0;
+    }
+
+    .inputboxGroup{
+        top: -5vh;
+        padding-top: 5vh;
+        padding-bottom: 0;
+    }
+
+    .labels{
+        height: fit-content;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .checkboxGroup{
+        height: fit-content;
+    }
+
+    .checkboxLabelPair{
+        height: fit-content;
+    }
+
+    .head{
+        font-size: 3vw;
+        padding-bottom: 0;
+    }
+}

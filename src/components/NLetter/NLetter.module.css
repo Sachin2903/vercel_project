@@ -1,0 +1,158 @@
+@font-face {
+    font-family: futuraBold;
+    font-weight: bold;
+    src: url("../../assets/Futura\ Bold.otf") format("opentype");
+}
+
+.letterN{
+    display: block;
+    color: #ffffff;
+    font-family: futuraBold, sans-serif;
+    /* font-family: 'Lato-Regular', sans-serif; */
+    font-size: 6vw;
+    font-weight: 1000;
+}
+
+.n1{
+    position: absolute;
+    padding-left: 0.5vw;
+    /* left: -0.05vw; */
+    line-height: 100%;
+}
+
+.n2{
+    position: absolute;
+    padding-left: 0.5vw;
+    /* top: -0.01vw; */
+    /* left: -0.01vw; */
+    line-height: 100%;
+}
+
+.toRight{
+    animation: toRight 1s;
+}
+
+@keyframes toRight{
+    to{
+        transform: translateX(10vw);
+    }
+}
+
+.fromTop{
+    animation: fromTop 1s;
+}
+
+@keyframes fromTop{
+    from{
+        transform: translateY(-7vw);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.toBottom{
+    animation: toBottom 1s;
+}
+
+@keyframes toBottom{
+    to{
+        transform: translateY(7vw);
+    }
+}
+
+.fromLeft{
+    animation: fromLeft 1s;
+}
+
+@keyframes fromLeft{
+    from{
+        transform: translateX(-7vw);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.toTop{
+    animation: toTop 1s;
+}
+
+@keyframes toTop{
+    to{
+        transform: translateY(-7vw);
+    }
+}
+
+.fromBottom{
+    animation: fromBottom 1s;
+}
+
+@keyframes fromBottom{
+    from{
+        transform: translateY(7vw);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+@media only screen and (max-width: 1279px) and (max-aspect-ratio: 1/1){
+
+    .letterN{
+        display: block;
+        color: #ffffff;
+        font-family: futuraBold, sans-serif;
+        font-size: 12vh;
+        font-weight: 1000;
+        line-height: 110%;
+        transform-origin: 50% 50%;
+        transform: none ; 
+        pointer-events: none;
+        padding: 0 1vh;
+    }
+
+    .n1{
+        display: block;
+        position: relative;
+        padding: 0 1vh;
+        line-height: 110%;
+    }
+
+    .n2{
+        display: none;
+    }
+
+    .minify{
+        animation: minify 0.5s forwards;
+    }
+
+    @keyframes minify {
+        from{
+            font-size: 12vh;
+            line-height: 110%;
+        }
+
+        to{
+            font-size: 8vh;
+            line-height: 160%;
+        }
+    }
+
+    .magnify{
+        animation: magnify 0.5s forwards;
+    }
+
+    @keyframes magnify {
+        from{
+            font-size: 8vh;
+            line-height: 160%;
+        }
+
+        to{
+            font-size: 12vh;
+            line-height: 110%;
+        }
+    }
+}

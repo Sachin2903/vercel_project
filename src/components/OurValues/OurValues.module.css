@@ -1,0 +1,413 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.mainHead{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+    width: 100vw;
+    height: 33.33vh;
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15vh;
+    background-color: #1A1A1A;
+}
+
+.flexboxRow{
+    display: flex;
+    flex-direction: row;
+    min-height: 33.33vh;
+    min-width: 100vw;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.itemBox{
+    position: relative;
+    z-index: 7;
+    min-width: 33.33vw;
+    min-height: 100%;
+    padding-top: 10vh;
+    border: 1px solid #ffffff;
+    background-color: #1A1A1A;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.itemHead{
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.topDown{
+    animation: topDown 1s ;
+}
+
+@keyframes topDown{
+    from{
+        top: -0.5vh;
+    }
+    to{
+        top: 0;
+    }
+}
+
+.bottomUp1{
+    animation: bottomUp1 1s;
+}
+
+@keyframes bottomUp1{
+    from{
+        top: 5vh;
+    }
+    to{
+        top: 0;
+    }
+}
+
+.bottomUp2{
+    animation: bottomUp2 1s;
+}
+
+@keyframes bottomUp2{
+    from{
+        top: 10vh;
+    }
+    to{
+        top: 0;
+    }
+}
+
+.bottomUp3{
+    animation: bottomUp3 1s;
+}
+
+@keyframes bottomUp3{
+    from{
+        top: 3vh;
+    }
+    to{
+        top: 0;
+    }
+}
+
+.animate{
+    animation: animate 0.5s forwards;
+}
+
+@keyframes animate{
+    from{
+        padding-top: 10vh;
+    }
+    to{
+        padding-top: 5vh;
+    }
+}
+
+.unAnimate{
+    animation: unAnimate 0.5s;
+}
+
+@keyframes unAnimate{
+    from{
+        padding-top: 5vh;
+    }
+    to{
+        padding-top: 10vh;
+    }
+}
+
+.hideDetail{
+    display: none;
+}
+
+.revealedDetail{
+     font-size: 1vw;
+     padding-left: 5vw;
+     padding-right: 5vw;
+     text-align: left;
+     animation: revealedDetail 0.5s forwards;
+}
+
+@keyframes revealedDetail{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.unrevealedDetail{
+    font-size: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align: left;
+    animation: unrevealedDetail 0.5s forwards;
+}
+
+@keyframes unrevealedDetail{
+   from{
+       opacity: 1;
+   }
+   to{
+       opacity: 0;
+   }
+}
+
+.flexboxCol{
+    display: none;
+}
+
+@media only screen and (max-width: 1279px) and (max-aspect-ratio: 1/1), (max-device-aspect-ratio: 1/1) and (orientation: portrait){
+
+    .potraitColContainer{
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+    }
+
+    .mainHead{
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+        width: 100vw;
+        height: 20vh;
+        font-size: 5vw;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10vh;
+        background-color: #1A1A1A;
+    }
+
+    .itemHead{
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    
+    .flexboxRow{
+        display: none;
+    }
+
+    .flexboxCol{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 80vh;
+        min-width: 50vw;
+        background-color: #1a1a1a;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+    }
+
+    .itemBoxTop{
+        position: relative;
+        z-index: 7;
+        min-height: 26.67vh;
+        width: 50vw;
+        padding-top: 10vh;
+        border: 1px solid #ffffff;
+        background-color: #1A1A1A;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        overflow: hidden;
+    }
+
+    .itemBoxMiddle{
+        position: absolute;
+        z-index: 7;
+        /* min-height: 26.67vh; */
+        height: 26.67vh;
+        width: 50vw;
+        padding-top: 10vh;
+        top: 26.67vh;
+        border: 1px solid #ffffff;
+        background-color: #1A1A1A;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        overflow: hidden;
+    }
+
+    .itemBoxBottom{
+        position: absolute;
+        z-index: 7;
+        /* min-height: 26.67vh; */
+        height: 26.67vh;
+        width: 50vw;
+        padding-top: 10vh;
+        top: 53.34vh;
+        border: 1px solid #ffffff;
+        background-color: #1A1A1A;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        overflow: hidden;
+    }
+
+    
+    .revealedDetail{
+        font-size: 4vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 2vh;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+        text-align: left;
+        animation: revealedDetail 0.5s forwards;
+   }
+
+   .unrevealedDetail{
+        font-size: 4vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 2vh;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+        text-align: left;
+        animation: unrevealedDetail 0.5s forwards;
+    }
+
+    .animateTop{
+        animation: animateTop 0.5s forwards;
+    }
+
+    .animateMiddle{
+        animation: animateMiddle 0.5s forwards;
+    }
+
+    .animateBottom{
+        animation: animateBottom 0.5s forwards;
+    } 
+
+    .unAnimateTop{
+        animation: unAnimateTop 0.5s forwards;
+    }
+
+    .unAnimateMiddle{
+        animation: unAnimateMiddle 0.5s forwards;
+    }
+
+    .unAnimateBottom{
+        animation: unAnimateBottom 0.5s forwards;
+    } 
+
+    @keyframes animateTop {
+        from{
+            height: 26.67vh;
+            z-index: 7;
+        }
+
+        to{
+            height: 80vh;
+            z-index: 10;
+        }
+    }
+
+    @keyframes unAnimateTop {
+        from{
+            height: 80vh;
+            z-index: 10;
+        }
+
+        to{
+            
+            height: 26.67vh;
+            z-index: 7;
+            
+        }
+    }
+
+    @keyframes animateMiddle {
+        
+
+        from{
+            height: 26.67vh;
+            z-index: 7;
+            top:26.67vh;
+        }
+
+        to{
+            height: 80vh;
+            z-index: 10;
+            top: 0;
+        }
+    }
+
+    @keyframes unAnimateMiddle {
+        from{
+            height: 80vh;
+            z-index: 10;
+            top: 0;
+        }
+
+        to{
+            height: 26.67vh;
+            z-index: 7;
+            top: 26.67vh;
+        }
+    }
+
+    @keyframes animateBottom {
+        from{
+            height: 26.67vh;
+            z-index: 7;
+            top: 53.34vh;
+        }
+
+        to{
+            height: 80vh;
+            z-index: 10;
+            top: 0;
+        }
+    }
+
+    @keyframes unAnimateBottom {
+        from{
+            height: 80vh;
+            z-index: 10;
+            top: 0;
+        }
+
+        to{
+            height: 26.67vh;
+            z-index: 7;
+            top: 53.34vh;
+        }
+    }
+
+    .topDown{
+        animation: none;
+    }
+
+    .bottomUp1{
+        animation: none;
+    }
+
+    .bottomUp2{
+        animation: none;
+    }
+
+    .bottomUp3{
+        animation: none;
+    }
+    
+}
+
+

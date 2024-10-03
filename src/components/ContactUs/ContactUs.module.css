@@ -1,0 +1,391 @@
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    width: 100vw;
+    height: fit-content;
+    /* min-height: 100vh;
+    max-height: 100vh; */
+    
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+    overflow: hidden;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    /* width: 46vw; */
+    width: 50vw;
+    padding-top: 15vh;
+    border-right: 2px solid #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 4vw;
+    padding-bottom: 10vh;
+    max-height: 50vh;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+.bigHead{
+    font-size: 5vw;
+    font-weight: bold;
+    color: #00a5d6;
+    text-align: left;
+    padding-bottom: 3vh;
+}
+
+.info{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #00a5d6; 
+    text-align: left;
+    padding-bottom: 2vh;
+}
+
+.formBox{
+    /* height: 100vh; */
+    width: 50vw;
+    padding-top: 10vh;
+    padding-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #27343a;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.formHead{
+    color: #ffffff;
+    font-size: 3.5vw;
+    font-weight: bold;
+    text-align: left;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 60vh;
+}
+
+.fieldPair{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    justify-content: space-between;
+}
+
+.inputField{
+    background-color: #00000000;
+    border:0;
+    border-bottom: 1px solid #51585b;
+    outline: none;
+}
+
+.msgField{
+    width: 80%;
+}
+
+.submitButton{
+    background-color: #181818;
+    border-color: 2px solid #ffffff;
+    width: 10vw;
+    padding: 1vh;
+    margin-top: 5vh;
+    margin-left: 1vw;
+    color: #c4c4c4;
+    font-size: 1.2vw;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.submitButton:hover{
+    animation: hoverAnimate 0.5s forwards;
+}
+
+@keyframes hoverAnimate{
+    from{
+        color: #c4c4c4;
+        background-color: #181818;
+        border-color: 2px solid #ffffff;
+    }
+    to{
+        color: #181818;
+        background-color: #c4c4c4;
+        border-color: 2px solid #181818;
+    }
+}
+
+.smGroup{
+    display: flex;
+    flex-direction: column;
+    color: #c4c4c4;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: left;
+    margin-top: 15vh;
+}
+
+.iconList{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    height: 5vw;
+    width: 5vw;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+.mapBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 1;
+    min-height: 40vh;
+    min-width: 50vw;
+    background-color: #6b86b5;
+    padding-top: 6vh;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.map{
+    height: 15vw;
+    width: 15vw;
+}
+
+.addressBox{
+    max-width: 50%;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.4vw;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.infoPortrait{
+    display: none;
+}
+
+.logo{
+    display: none;
+    height: auto;
+    width: auto;
+}
+
+.address{
+    display: block;
+    padding-top: 5vh;
+}
+
+.addressMsg{
+    display: none;
+}
+
+/* (orientation: portrait) */
+/* @media only screen and (max-width: 1279px) and (max-aspect-ratio: 1/1), (max-device-aspect-ratio: 1/1) and (max-device-width: 767px){ 2nd part of 2nd condition prevents iPad in landscape mode from accessing this query. iPad seems to have the problem of considering its device-aspect-ratio to be less than 1/1 even in landscape mode. */
+@media only screen and (max-width: 1279px) and (max-aspect-ratio: 13/9) { /* 2nd part of 2nd condition prevents iPad in landscape mode from accessing this query. iPad seems to have the problem of considering its device-aspect-ratio to be less than 1/1 even in landscape mode. */
+
+    .container{
+        flex-direction: column-reverse;
+    } 
+  
+    .details{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100vw;
+        padding-top: 0vh;
+        border-right: 2px solid #ffffff;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+    }
+
+    .text{
+        display: none;
+    }
+    
+    .mapBox{
+        width: 100%;
+    }
+
+    .formHead{
+        color: #ffffff;
+        font-size: 10vw;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 5vh;
+    }
+
+    .formBox{
+        /* height: 100vh; */
+        width: 100vw;
+        padding-top: 7vh;
+        padding-left: 4vw;
+        display: flex;
+        flex-direction: column;
+        background-color: #27343a;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+    }
+
+    .fieldPair{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: space-between;
+    }
+
+    .infoPortrait{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info{
+        font-size: 5vw;
+        font-weight: bold;
+        color: #00a5d6; 
+        text-align: left;
+        padding-bottom: 2vh;
+    }
+
+    .msgField{
+        width: 100vw;
+    }
+    
+    .submitButton{
+        background-color: #181818;
+        border-color: 2px solid #ffffff;
+        width: 60vw;
+        height: fit-content;
+        padding: 1vh;
+        margin-top: 5vh;
+        margin-bottom: 8vh;
+        margin-left: 1vw;
+        color: #c4c4c4;
+        font-size: 5vw;
+        font-weight: bold;
+        cursor: pointer;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+    }
+
+    .smGroup{
+        display: flex;
+        flex-direction: column;
+        color: #c4c4c4;
+        font-weight: bold;
+        font-size: 6vw;
+        text-align: left;
+        margin-top: 2vh;
+        padding-bottom: 4vh;
+    }
+
+    .icon{
+        height: 15vw;
+        width: 15vw;
+        cursor: pointer;
+        margin-right: 1vw;
+    }
+    
+    .mapBox{
+        justify-content: flex-start;
+    }
+
+    .map{
+        height: 50vw;
+        width: 50vw;
+    }
+    
+    .logo{
+        display: block;
+        position: relative;
+        height: 15vh;
+        width: 20vh;
+        top: 3vh;
+    }
+    
+
+    .addressMsg{
+        display: block;
+        font-size: 5vw;
+    }
+
+    .mapPortrait{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3vw;
+        width: 50vw;
+    }
+
+    /* .addressPortrait{
+        display: block;
+        text-align: left;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 3vw;
+        padding: 2vh 0 2vh 0;
+    } */
+
+    .addressBox{
+        font-size: 3vw;
+    }
+    
+}
+
+@media only screen and (max-width: 1279px) and (min-aspect-ratio: 3/2){
+    .submitButton{
+        background-color: #181818;
+        border-color: 2px solid #ffffff;
+        width: 30vw;
+        height: fit-content;
+        padding: 1vh;
+        margin-top: 5vh;
+        margin-bottom: 8vh;
+        margin-left: 1vw;
+        color: #c4c4c4;
+        font-size: 3vw;
+        font-weight: bold;
+        cursor: pointer;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+    }
+
+}

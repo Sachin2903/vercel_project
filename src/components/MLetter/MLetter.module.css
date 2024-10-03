@@ -1,0 +1,129 @@
+@font-face {
+    font-family: futuraBold;
+    font-weight: bold;
+    src: url("../../assets/Futura\ Bold.otf") format("opentype");
+}
+
+.letterM{
+    display: block;
+    padding-top: calc(100vw * 29/1920 );
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.leftSpace{
+    padding-left: 10vw;
+}
+
+.svg{
+    width: 90%;
+    height: 90%;
+}
+
+.MLetter{
+    display: none;
+}
+
+@media only screen and (max-width: 1279px ) and (max-aspect-ratio: 1/1){
+    .letterM{
+        display: none;
+    }
+
+    .MLetter{
+        display: block;
+        color: #ffffff;
+        font-family: futuraBold, sans-serif;
+        font-size: 22vh;
+        font-weight: 1000;
+        line-height: 110%;
+        transform-origin: 50% 50%;
+        transform: none ; 
+        pointer-events: none;
+
+    }
+
+    .rotation1{
+        animation: rotation1 0.5s forwards;
+    }
+
+    @keyframes rotation1 {
+        from{
+            font-size: 22vh;
+            transform: rotate(0);
+        }
+        to{
+            font-size: 19vh;
+            transform: rotate(72deg);
+        }
+    }
+
+    .rotation2{
+        animation: rotation2 0.5s forwards;
+    }
+
+    @keyframes rotation2{
+        from{
+            font-size: 19vh;
+            line-height: 130%;
+            transform: rotate(72deg);
+        }
+        to{ 
+            font-size: 19vh;
+            line-height: 130%;
+            transform: rotate(144deg);
+        }
+    }
+
+    .rotation3{
+        animation: rotation3 0.5s forwards;
+    }
+
+    @keyframes rotation3 {
+        from{
+            font-size: 19vh;
+            line-height: 130%;
+            transform: rotate(144deg);
+        }
+        to{
+            font-size: 19vh;
+            line-height: 130%;
+            transform: rotate(216deg);
+        }
+    }
+
+    .rotation4{
+        animation: rotation4 0.5s forwards;
+    }
+
+    @keyframes rotation4{
+        from{
+            font-size: 19vh;
+            line-height: 130%;
+            transform: rotate(216deg);
+        }
+        to{
+            font-size: 19vh;
+            line-height: 130%;
+            transform: rotate(288deg);
+        }
+    }
+    .rotation5{
+        animation: rotation5 0.5s forwards;
+    }
+
+    @keyframes rotation5{
+        from{
+            font-size: 19vh;
+            line-height: 130%;
+            transform: rotate(288deg);
+        }
+        to{
+            font-size: 22vh;
+            line-height: 110%;
+            transform: rotate(360deg);
+        }
+    }
+    
+}

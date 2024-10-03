@@ -1,0 +1,111 @@
+Meeting held on 22nd Feb:
+
+letters:
+will onload letter transitions happen on first render ? no
+last M state svg ? ///pending
+what is to happen to animated S if menu is clicked ? reset
+ 
+ddd:
+where do those links lead to ? answered
+
+our values:
+
+text for remaining boxes ? //// pending
+does drop down look fine ? corrected
+image for long arrow ? ////pending
+
+pwu:
+what exactly to send on email ? ////pending
+drop down is absent ? create opaque bar
+
+Contact Us:
+drop down absent ? create opaque bar
+where to send placeholder when user fills detail ? material ui style
+map location ? correct
+
+Footer:
+Careers twice ? remove lower
+Hover styles ? none
+
+################################
+
+Meeting held on 8th March:
+
+top left icon melds into grey background ? to be changed
+colors of animated input fields ? white on hover..contactUsBig color on selection
+lorem ipsums ? to be provided
+menu ?
+checkbox ? no
+services header highlight ? no
+services header cursor pointer ? no
+industrial design text not complete in xd ? will make it concise
+images ? 
+favicon ? pending
+mobile ?
+desktop design for letters screen when mobile is in landscape orientation ? pending decision
+
+
+// remove hover colors on ebox
+// remove border-readius on menu
+
+Should there be an animation delay in cards on About Us ? No
+Should the picture itself crop at the top in cards on About Us ? No
+
+////////////////
+
+Meeting held on 31st March:
+
+Footer design :
+1. Should logo really be on top(it takes too much space) ?
+2. What should be the alignment of items
+3. In bottom strip, what are these new links ?
+4. In bottom strip, are the SM icons to be repeated ?
+
+
+Get a Quote:
+Should there be no space for dropdown ? no there should be
+
+Services:
+1. Images pending ?
+2. No images for service header in mobile ?
+
+Our Values:
+hover colors for "Liberation by Design" and "Pushing Boundaries" ?
+
+Work:
+Should category headers form part of the slide in mobile ?
+
+Letters:
+1. How to fit D widthwise in mobile ?
+2. Where to find the favicon, svg logos and last M(for desktop) ?
+3. How to rotate M without exceeding square in mobile ?
+
+
+Remove logo in contactUs mapbox, center written address for desktop
+
+
+800 x1280 = 0.625
+768x1024 = 0.75
+601x962 = 0.625
+
+375x812 = 0.462
+375x667 = 0.56
+414x736 = 0.56
+414x896 = 0.46
+360x640 = 0.56
+
+1125/2436 = 0.46
+
+//// Post Production /////
+
+black checkboxes in mobile view, screen mode shift and dropdown smudging due android soft, keypad, aboutUs responsivity fix in landscape mode for small phones, Inspiration responsivity
+in iPad landscape mode, Navbar media queries for iPad landscape mode fixed, iOS devices OurValues-to-DDD scrolling issue resolution, 
+fixing min-device-aspect-ratios to a more miniscule figure, arrow positions in Work corrected, two-finger-swipe(on mac trackpad) scrolling for image galleries introduced.
+
+
+Remove Inspiration
+Remove Footer
+Redirect Logo to home page
+left align ddd
+on services, wait for images.
+Work bug check. 

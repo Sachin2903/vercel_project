@@ -1,0 +1,492 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: #1A1A1A;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+    /* overflow: scroll; */
+}
+
+.itemsBox{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-align: left;
+    padding-top: 10vh;
+    padding-left: 10vw;
+    width: 50vw;
+    height: 100vh;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    border-left: 1px solid #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.contentText{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding-top: 16vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    color: #ffffff;
+    font-size: 1.3vw;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.header{
+    display: block;
+    font-size: 4vw;
+    font-weight: bold;
+    cursor: default;
+}
+
+.item{
+    display: block;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-top: 3vh;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+/* .item:hover{
+    color: #bcbcbc;
+} */
+
+.selection{
+    color: #bcbcbc;
+}
+
+.servicesColor{
+    background-color: #1dacd6;
+}
+
+.idColor{
+    background-color: #d78145;
+}
+
+.sdColor{
+    background-color: #7d92ba;
+}
+
+.uxColor{
+    background-color: #52b987;
+}
+
+.gdColor{
+    background-color: #a176bF;
+}
+
+.brandingColor{
+    background-color: #c4c053;
+}
+
+.pdColor{
+    background-color: #803730;
+}
+
+.fdColor{
+    background-color: #303c44;
+}
+
+.dmColor{
+    background-color: #5aa1a7;
+}
+
+.animateSelected{
+    animation: animateSelected 1s forwards;
+}
+
+@keyframes animateSelected{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.animateDeselected{
+    position: absolute;
+    top: 16vh;
+    z-index: 2;
+    opacity: 1;
+    padding-right: 4vw;
+    animation: animateDeselected 1s forwards;
+}
+
+.animateImagesDeselected{
+    position: absolute;
+    top: 50vh;
+    z-index: 2;
+    opacity: 1;
+    animation: animateDeselected 1s forwards;
+}
+
+@keyframes animateDeselected{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.hide{
+    position: absolute;
+    top: 16vh;
+    z-index: 2;
+    padding-right: 4vw;
+    opacity: 0;
+}
+
+.hideImages{
+    position: absolute;
+    top: 50vh;
+    z-index: 2;
+    opacity: 0;
+}
+
+.projectsLink{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 2vh;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.greyIn{
+    animation: greyIn 0.5s forwards;
+    color: #00000000;
+}
+
+@keyframes greyIn{
+    from{
+        color: #ffffff;
+        
+    }
+    to{
+        color: #00000000;
+        background-color: #00000000;
+    }
+}
+
+.greyOut{
+    animation: greyOut 0.5s forwards;
+}
+
+@keyframes greyOut{
+    from{
+        color: #00000000;
+    }
+    to{
+        color: #ffffff;
+    }
+}
+
+.imageBox{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 50vw;
+    box-sizing: border-box
+}
+
+.image1{
+    height: 50vh;
+    width: 25vw;
+    border-right: 1px solid  #ffffff;
+    box-sizing: border-box;
+}
+
+.otherImages{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 25vw;
+    box-sizing: border-box;
+}
+
+.image2{
+    height: 25vh;
+    width: 25vw;
+    border-bottom: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.lowerImages{
+    display: flex;
+    flex-direction: row;
+    height: 25vh;
+    width: 25vw;
+    box-sizing: border-box;
+}
+
+.image3{
+    height: 25vh;
+    width: 12.5vw;
+    border-right: 1px solid #ffffff;
+}
+
+.remainingmages{
+    display: flex;
+    flex-direction: column;
+}
+
+.image4{
+    height: 12.5vh;
+    width: 12.5vw;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ffffff;
+}
+
+.threeImages{
+    display: flex;
+    flex-direction: row;
+}
+
+.image5{
+    height: 12.5vh;
+    width: calc(12.5vw/3);
+    box-sizing: border-box;
+    border-bottom: 1px solid #ffffff;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+.servicesPortrait{
+    display: none;
+}
+
+.arrow{
+    display: none;
+}
+
+.showPortraitContent{
+    display: none;
+}
+
+.hidePortraitMenu{
+    display: flex;
+}
+
+.imageBoxPortrait{
+    display: none;
+}
+
+.contentHeaderRow{
+    display: none;
+}
+
+@media only screen and (max-width: 1279px) and (max-aspect-ratio: 1/1){
+
+    .projectsLink{
+        display: none;
+    }
+
+    /* .container{
+        height: fit-content;
+    } */
+
+    .content{
+        display: none;
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .contentHeaderRow{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+        padding: 3vh 0;
+    }
+
+    .contentHead{
+        padding-left: 10vw;
+        text-align: center;
+        font-size: 7vw;
+        font-weight: bold;
+    }
+
+    .contentText{
+        padding-top: 0;
+        font-size: 4vw;
+    }
+
+    .itemsBox{
+        padding: 0;
+        width: 100vw;
+        height: fit-content;
+        overflow: scroll;
+    }
+
+    .item{
+        height: 8vh;
+        padding-top: 1vh;
+        padding-left: 3vw;
+        font-size: 6vw;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .imageBox{
+        display: none;
+    }
+
+    .header{
+        background-color: #1dacd6;
+        text-align: center;
+        font-size: 10vw;
+        padding-top: 2vh;
+        height: 45vh;
+        font-weight: bold;
+        cursor: default;
+        pointer-events: none;
+    }
+
+    .servicesPortrait{
+        display: block;
+        font-size: 4vw;
+        font-weight: normal;
+        text-align: left;
+        padding: 0.5vh 4vw 0 4vw;
+    }
+
+    .arrow{
+        display: block;
+        height: 10px;
+        width: 10px;
+        position: relative;
+        left: 85vw;
+        top: -4vh;
+        border-bottom: 3px solid #ffffff;
+        border-right: 3px solid #ffffff;
+        transform: rotate(-40deg);
+        pointer-events: none;
+    }
+
+    .arrowLeft{
+        display: block;
+        position: relative;
+        height: 10px;
+        width: 10px;
+        position: relative;
+        left: 1vw;
+        top: 2vh;
+        border-bottom: 3px solid #ffffff;
+        border-left: 3px solid #ffffff;
+        transform: rotate(40deg);
+        cursor: pointer;
+    }
+    
+    .imageBoxPortrait{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 95vh;
+    }
+
+    .imagePair{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height:  calc(95vh/3);
+    }
+
+    .image1Portrait{
+        width: 50%;
+        height: 100%;
+        border: 1px solid  #ffffff;
+    }
+
+    .image23Portrait{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        border: 1px solid  #ffffff;
+    }
+
+    .image2Portrait{
+        width: 100%;
+        height: 50%;
+        border: 1px solid  #ffffff;
+    }
+
+    .image3Portrait{
+        width: 100%;
+        height: 50%;
+        border: 1px solid  #ffffff;
+    }
+
+    .image4Portrait{
+        width: 65%;
+        height: 100%;
+        border: 1px solid  #ffffff;
+    }
+
+    .image5Portrait{
+        width: 35%;
+        height: 100%;
+        border: 1px solid  #ffffff;
+    }
+
+    .image6Portrait{
+        width: 50%;
+        height: 100%;
+        border: 1px solid  #ffffff;
+    }
+
+    .image7Portrait{
+        width: 50%;
+        height: 100%;
+        border: 1px solid  #ffffff;
+    }
+
+    .showPortraitContent{
+        display: block;
+    }
+
+    .hidePortraitMenu{
+        display: none;
+    }
+}
+
+@media only screen and (min-aspect-ratio: 64/100) and (max-aspect-ratio:  1/1){
+
+    .header{
+        font-size: 7vw;
+    }
+
+    .servicesPortrait{
+        font-size: 3vw;
+    }
+
+    .contentText{
+        font-size: 3vw;
+    }
+}

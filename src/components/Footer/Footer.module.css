@@ -1,0 +1,98 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* height: 20vh; */  /* removed because first section is removed */ 
+    height: fit-content;
+    overflow: hidden;
+}
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    background-color: #272727;
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10vw;
+    padding-top: 1.5vh;
+    color: #ffffff;
+    height: 5vh;
+    font-size: 1vw;
+    background-color: #414141;
+}
+
+.logo{
+    display: flex;
+    padding-left: 2vw;
+    justify-content: flex-start;
+    width: 45vw;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    padding-top: 2vh;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #ffffff;
+    font-size: 1vw;
+    height: 7.5vh;
+}
+
+.item{
+    width: 14vw;
+    text-align: left;
+}
+
+.bigLogo{
+    padding-top: 2vh;
+    height: 97px;
+    width: 192px;
+}
+
+.highlight{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1279px) and (max-aspect-ratio: 1/1), (max-device-aspect-ratio: 1/1) and (orientation: portrait){
+
+    .logo{
+        width: 40vw;
+    }
+    
+    .list{
+        font-size: 3vw;
+    }
+
+    .bigLogo{
+        padding-top: 2vh;
+        height: 60px;
+        width: 140px;
+    }
+
+    .section2{
+        font-size: 3vw;
+    }
+    
+}
+
+@media only screen and (max-width: 1279px) and (min-aspect-ratio: 10001/10000) and (min-device-aspect-ratio: 10001/10000){
+
+    .bigLogo{
+        padding-top: 2vh;
+        height: 30px;
+        width: 60px;
+    }
+}

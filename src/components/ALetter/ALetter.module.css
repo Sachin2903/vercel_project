@@ -1,0 +1,120 @@
+@font-face {
+    font-family: futuraBold;
+    font-weight: bold;
+    src: url("../../assets/Futura\ Bold.otf") format("opentype");
+}
+
+.letterA{
+    position: absolute;
+    display: block;
+    color: #ffffff;
+    font-family: futuraBold, sans-serif;
+    /* font-family: 'Lato-Regular', sans-serif; */
+    font-size: 13vw;
+    font-weight: 1000;
+    transform: rotate(-90deg) translateX(3vw) ; 
+    pointer-events: none;
+}
+
+.turned{
+    animation: turned 0.8s forwards;
+}
+
+@keyframes turned{
+    0%{
+        transform: rotate(-90deg) translateX(3vw); 
+    }
+
+
+    33%{
+        transform: rotate(-111deg) translateX(0.2vw); 
+    }
+
+    45%{
+        transform: rotate(-111deg) translateX(1vw); 
+    }
+
+    55%{
+        transform: rotate(-111deg) translateX(0.2vw);
+    }
+
+    75%{
+        transform: rotate(-111deg) translateX(0.5vw);
+    }
+
+    85%{
+        transform: rotate(-111deg) translateX(0.2vw);
+    }
+
+    95%{
+        transform: rotate(-111deg) translateX(0.3vw);
+    }
+
+    100%{
+        transform: rotate(-111deg) translateX(0.2vw) ;
+    }
+
+}
+
+
+.unturned{
+    animation: unturned 1s forwards;
+}
+
+@keyframes unturned{
+    from{
+        transform: rotate(-111deg) translateX(0.2vw);
+    }
+    to{
+        transform: rotate(-90deg) translateX(3vw); 
+    }
+}
+
+@media only screen and (max-width: 1279px) and (max-aspect-ratio: 1/1){
+
+    .letterA{
+        position: relative;
+        display: block;
+        color: #ffffff;
+        font-family: futuraBold, sans-serif;
+        font-size: 12vh;
+        font-weight: 1000;
+        line-height: 110%;
+        transform-origin: 50% 50%;
+        transform: none ; 
+        pointer-events: none;
+        padding: 0 1vh;
+    }
+
+    .minify{
+        animation: minify 0.5s forwards;
+    }
+
+    @keyframes minify {
+        from{
+            font-size: 12vh;
+            line-height: 110%;
+        }
+
+        to{
+            font-size: 8vh;
+            line-height: 160%;
+        }
+    }
+
+    .magnify{
+        animation: magnify 0.5s forwards;
+    }
+
+    @keyframes magnify {
+        from{
+            font-size: 8vh;
+            line-height: 160%;
+        }
+
+        to{
+            font-size: 12vh;
+            line-height: 110%;
+        }
+    }
+}

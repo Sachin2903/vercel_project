@@ -1,0 +1,456 @@
+@font-face {
+    font-family: futuraBold;
+    font-weight: bold;
+    src: url("../../assets/Futura\ Bold.otf") format("opentype");
+}
+
+.letterS{
+    color: #ffffff;
+    font-family: futuraBold, sans-serif;
+    /* font-family: 'Lato-Regular', sans-serif; */
+    font-size: 25vw;
+    /* font-size: 15.63vw; */
+    font-weight: 1000;
+    /* line-height: 137%; */
+    line-height: 137%;
+    transform: rotate(-90deg) translateX(4.17vw) ; 
+    pointer-events: none;
+}
+
+.orientDown{
+    animation: orientDown 1.5s forwards;
+}
+
+@keyframes orientDown{
+    from{
+        font-size: 25vw;
+        line-height: 137%;
+        transform: rotate(-90deg) translateX(4.17vw);
+    }
+    to{
+        font-size: 20vw;
+        line-height: 190%;
+        transform: rotate(-90deg) translateX(-5.69vw);
+    }
+}
+
+.orientUp{
+    animation: orientUp 3s forwards;
+}
+
+@keyframes orientUp{
+    from{
+        font-size: 20vw;
+        /* line-height: 167%; */
+        line-height: 180%;
+        transform: rotate(-90deg) translateX(-5.69vw) ;
+    }
+    to{ 
+        line-height: 137%;
+        font-size: 25vw;
+        transform: rotate(-90deg) translateX(4.17vw) ;
+    }
+}
+
+.twist1{
+    margin-left: 5vw;
+    margin-top: 2vh;
+    animation: twist1 0.5s forwards;
+}
+
+@keyframes twist1{
+    from{
+        width: 8vw;
+        height: 8vw;
+        font-size: 6vw;
+        border-radius: 50%;
+        
+        line-height: normal;
+        transform: rotate(-90deg)  ; 
+        transform-origin: 50% 60%;
+    }
+    to{
+        font-size: 3vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: #C4C053;
+        line-height: normal;
+        transform-origin: 50% 60%;
+        transform: rotate(380deg)  ;
+    }
+}
+/* @keyframes twist1{
+    from{
+        
+        transform: rotate(-90deg) translateX(4.17vw); 
+        transform-origin: 50% 60%;
+    }
+    to{
+        transform-origin: 50% 60%;
+        transform: rotate(380deg)  ;
+    }
+} */
+
+.twist2{
+    animation: twist2 0.5s forwards;
+}
+
+@keyframes twist2{
+    0%{
+        position: relative;
+        font-size: 3vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: #C4C053;
+        line-height: normal;
+        transform-origin: bottom right;
+        transform: rotate(380deg) translateX(4.17vw) ;
+    }
+    30%{
+        position: relative;
+        font-size: 3vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: #C4C053;
+        line-height: normal;
+        transform-origin: bottom right;
+        transform: rotate(-90deg) translateX(4.17vw) translateY(5vw) ;
+        
+    }
+    50%{
+        position: relative;
+        font-size: 3vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: #C4C053;
+        line-height: normal;
+        transform-origin: bottom right;
+        transform: rotate(-90deg) translateX(-15vw) translateY(5vw) ;
+        /* transform: rotate(-90deg) translateX(-30vh) translateY(5vw) ; */
+    }
+    70%{
+        position: relative;
+        font-size: 3vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: #C4C053;
+        line-height: normal;
+        transform-origin: bottom right;
+        transform: rotate(-90deg) translateX(-14vw) translateY(5vw) ;
+        /* transform: rotate(-90deg) translateX(-28vh) translateY(5vw) ; */
+    }
+
+    80%{
+        position: relative;
+        font-size: 3vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: #C4C053;
+        line-height: normal;
+        transform-origin: bottom right;
+        transform: rotate(-90deg) translateX(-15vw) translateY(5vw) ;
+        /* transform: rotate(-90deg) translateX(-30vh) translateY(5vw) ; */
+    }
+    90%{
+        position: relative;
+        font-size: 3vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: #C4C053;
+        line-height: normal;
+        transform-origin: bottom right;
+        transform: rotate(-90deg) translateX(-14.5vw) translateY(5vw) ;
+        /* transform: rotate(-90deg) translateX(-29vh) translateY(5vw) ; */
+    }
+
+    100%{
+        position: relative;
+        font-size: 3vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: #C4C053;
+        line-height: normal;
+        transform-origin: bottom right;
+        transform: rotate(-90deg) translateX(-15vw) translateY(5vw);
+        /* transform: rotate(-90deg) translateX(-30vh) translateY(5vw); */
+    }
+    
+}
+
+.twist3{
+    animation: twist3 0.5s forwards;
+}
+
+@keyframes twist3{
+    from{
+        position: relative;
+        font-size: 3vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: #C4C053;
+        line-height: normal;
+        transform-origin: bottom right;
+        transform: rotate(-90deg) translateX(-15vw)translateY(5vw) ; ;
+        /* transform: rotate(-90deg) translateX(-30vh)translateY(5vw) ; ; */
+    }
+    to{
+        position: relative;
+        z-index: 5;
+        font-size: 2vw;
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        line-height: normal;
+        transform-origin: bottom right;
+        transform: rotate(-90deg) translateX(-20vw) translateY(46vw);
+        /* transform: rotate(-90deg) translateX(-40vh) translateY(46vw); */
+    }
+}
+
+.twist4{
+    animation: twist4 0.5s forwards;
+}
+
+@keyframes twist4{
+    0%{
+        position: relative;
+        z-index: 5;
+        font-size: 2vw;
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        line-height: normal;
+        transform-origin: bottom right;
+        transform: rotate(-90deg) translateX(-20vw) translateY(46vw);
+        /* transform: rotate(-90deg) translateX(-40vh) translateY(46vw); */
+    }
+    100%{
+        position: relative;
+        z-index: 5;
+        font-size: 3vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        line-height: normal;
+        transform-origin: -0.05%;
+        transform: rotate(-120deg) translateX(-32vw) translateY(34vw);
+    }
+   
+}
+
+.twist5{
+    animation: twist5 0.5s forwards;
+}
+
+@keyframes twist5{
+    from{
+        position: relative;
+        z-index: 5;
+        font-size: 3vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        line-height: normal;
+        transform-origin: -0.05%;
+        transform: rotate(-120deg) translateX(-32vw) translateY(34vw);
+    }
+    to{
+        font-size: 25vw;
+        font-weight: 1000;
+        line-height: 137%;
+        transform: rotate(-90deg) translateX(4.17vw) translateY(0vw); 
+    }
+}
+
+
+
+  /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+  @media only screen and ( max-width: 1279px ) and (max-aspect-ratio: 1/1){
+
+    .letterS{
+        display: block;
+        color: #ffffff;
+        font-family: futuraBold, sans-serif;
+        font-size: 28vh;
+        font-weight: 1000;
+        line-height: 90%;
+        transform-origin: 50% 50%;
+        transform: none ; 
+        pointer-events: none;
+    }
+
+    .twist1{
+        margin-left: 5vh;
+        margin-top: 2vh;
+        animation: twist1 0.5s forwards;
+    }
+    
+
+    @keyframes twist1{
+        from{
+            width: 16vh;
+            height: 16vh;
+            font-size: 12vh;
+            border-radius: 50%;
+            line-height: normal;
+            transform-origin: 50% 50%;
+        }
+        to{
+            font-size: 4vh;
+            width: 6vh;
+            height:6vh;
+            border-radius: 50%;
+            background-color: #C4C053;
+            line-height: normal;
+            transform-origin: 50% 50%;
+            transform: rotate(380deg);
+        }
+    }
+
+    .twist2{
+        margin-left: 5vh;
+        margin-top: 2vh;
+        animation: twist2 0.5s forwards;
+    }
+    
+
+
+    @keyframes twist2{
+        0%{
+            font-size: 4vh;
+            width: 6vh;
+            height:6vh;
+            border-radius: 50%;
+            background-color: #C4C053;
+            line-height: normal;
+            transform-origin: 50% 50%;
+            transform: rotate(380deg);
+        }
+        1%{
+            position: relative;
+            font-size: 4vh;
+            width: 6vh;
+            height:6vh;
+            border-radius: 50%;
+            background-color: #C4C053;
+            line-height: normal;
+            transform-origin: 50% 50%;
+            transform: rotate(-90deg);
+        }
+        30%{
+            position: relative;
+            font-size: 4vh;
+            width: 6vh;
+            height:6vh;
+            border-radius: 50%;
+            background-color: #C4C053;
+            line-height: normal;
+            transform-origin: 50% 50%;
+            transform: rotate(-90deg) translateX(2vh);
+        }
+
+
+        50%{
+            position: relative;
+            font-size: 4vh;
+            width: 6vh;
+            height:6vh;
+            border-radius: 50%;
+            background-color: #C4C053;
+            line-height: normal;
+            transform-origin: 50% 50%;
+            transform: rotate(-90deg) translateX(-17vh)  ;
+        }
+        70%{
+            position: relative;
+            font-size: 4vh;
+            width: 6vh;
+            height:6vh;
+            border-radius: 50%;
+            background-color: #C4C053;
+            line-height: normal;
+            transform-origin: 50% 50%;
+            transform: rotate(-90deg) translateX(-13vh) ;
+        }
+    
+        80%{
+            position: relative;
+            font-size: 4vh;
+            width: 6vh;
+            height:6vh;
+            border-radius: 50%;
+            background-color: #C4C053;
+            line-height: normal;
+            transform-origin: 50% 50%;
+            transform: rotate(-90deg) translateX(-17vh)  ;
+        }
+        90%{
+            position: relative;
+            font-size: 4vh;
+            width: 6vh;
+            height:6vh;
+            border-radius: 50%;
+            background-color: #C4C053;
+            line-height: normal;
+            transform-origin: 50% 50%;
+            transform: rotate(-90deg) translateX(-15vh);
+        }
+    
+        100%{
+            position: relative;
+            font-size: 4vh;
+            width: 6vh;
+            height:6vh;
+            border-radius: 50%;
+            background-color: #C4C053;
+            line-height: normal;
+            transform-origin: 50% 50%;
+            transform: rotate(-90deg) translateX(-17vh) ;
+        }
+        
+    }
+
+    .twist3{
+        animation: twist3 0.5s forwards;
+    }
+
+    @keyframes twist3{
+    
+        0%{
+            position: relative;
+            font-size: 4vh;
+            width: 6vh;
+            height:6vh;
+            border-radius: 50%;
+            background-color: #C4C053;
+            line-height: normal;
+            transform-origin: 50% 50%;
+            transform: rotate(-90deg) translateX(-17vh) ;
+        }
+
+        100%{
+            display: block;
+            color: #ffffff;
+            font-family: futuraBold, sans-serif;
+            font-size: 28vh;
+            font-weight: 1000;
+            line-height: 90%;
+            transform-origin: 50% 50%;
+            transform: none ; 
+            pointer-events: none;
+        }
+    }
+    
+
+  }
+

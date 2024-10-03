@@ -1,0 +1,132 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw; 
+    padding-top: 10vh;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+    background-color: #1a1a1a;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 4vw;
+    padding-right: 6vw;
+    text-align: left;
+}
+
+.mainHead{
+    font-size: 3vw;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.companyName{
+    color:#707070;
+    font-size: 4vw;
+    margin-top: 5vh;
+}
+
+.description1{
+    color: #ffffff;
+    font-size: 1.5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.description2{
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+
+.teamHead{
+    color: #ffffff;
+    font-size: 3vw;
+    font-weight: bold;  
+    padding: 8vh 0 8vh 0; 
+}
+
+.cardsRow{
+    margin: 10px;
+    margin-right: 0.2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+    padding-bottom: 60vh;
+}
+
+.teamHeadPortrait{
+    display: none;
+}
+
+@media only screen and (max-aspect-ratio: 1/1){
+
+
+    .cardsRow{
+        margin: 10px;
+        margin-right: 0.2vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari, Chrome */
+        padding-bottom: 60vh;
+    }
+
+    .textContainer{
+        padding: 0;
+    }
+
+    .mainHead{
+        font-size: 10vw;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .companyName{
+        text-align: center;
+        font-size: 7vw;
+        margin-top: 0vh;
+        padding-bottom: 3vh;
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 4vh;
+    }
+
+    .description1{
+        font-size: 5vw;
+        padding-left: 4vw;
+        padding-right: 3vw;
+    }
+
+    .description2{
+        font-size: 5vw;
+        padding-left: 4vw;
+        padding-right: 3vw;
+        padding-bottom: 5vh;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .teamHead{
+        display: none;
+    }
+
+    .teamHeadPortrait{
+        display: block;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        text-align: center;
+        font-size: 8vw;
+        font-weight: bold;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,226 @@
+@font-face {
+    font-family: futuraBold;
+    font-weight: bold;
+    src: url("../../assets/Futura\ Bold.otf") format("opentype");
+}
+
+.container{
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    /* padding-top: calc(1920px - 140vw); */
+    border-right: 2px solid #ffffff;
+    overflow: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.container:hover{
+    background-color: #2c989f;
+}
+
+.letterD{
+    display: block;
+    padding-right: 5vw;
+    font-size: 62vw;
+    font-weight: 1000;
+    line-height: 80%;
+    max-height: 100%;
+    font-family: futuraBold, sans-serif;
+    /* font-family: 'Lato-Regular', sans-serif; */
+    color: #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari, Chrome */
+}
+
+.turnLeft{
+    animation: turnLeft 0.5s forwards;
+}
+
+.turnRight{
+    animation: turnRight 0.5s forwards; 
+}
+
+.turnNormal{
+    animation: turnNormal 0.5s forwards; 
+}
+
+@keyframes turnLeft {
+    from {
+        text-shadow: 0px 0px 0px #393939;
+    }
+    to {
+        text-shadow: -1px 0px 0px #393939,
+    -2px 0px 0px #393939,
+    -3px 0px 0px #393939,
+    -4px 0px 0px #393939,
+    -5px 0px 0px #393939,
+    -6px 0px 0px #393939,
+    -7px 0px 0px #393939,
+    -8px 0px 0px #393939,
+    -9px 0px 0px #393939,
+    -10px 0px 0px #393939,
+    -11px 0px 0px #393939,
+    -12px 0px 0px #393939,
+    -13px 0px 0px #393939,
+    -14px 0px 0px #393939,
+    -15px 0px 0px #393939,
+    -16px 0px 0px #393939,
+    -17px 0px 0px #393939,
+    -18px 0px 0px #393939,
+    -19px 0px 0px #393939,
+    -20px 0px 0px #393939,
+    -21px 0px 0px #393939,
+    -22px 0px 0px #393939,
+    -23px 0px 0px #393939,
+    -24px 0px 0px #393939,
+    -25px 0px 0px #393939,
+    -26px 0px 0px #393939,
+    -27px 0px 0px #393939,
+    -28px 0px 0px #393939,
+    -29px 0px 0px #393939,
+    -30px 0px 0px #393939 ;
+    }
+    
+  }
+
+  @keyframes turnRight{
+      from{
+        text-shadow: -1px 0px 0px #393939,
+        -2px 0px 0px #393939,
+        -3px 0px 0px #393939,
+        -4px 0px 0px #393939,
+        -5px 0px 0px #393939,
+        -6px 0px 0px #393939,
+        -7px 0px 0px #393939,
+        -8px 0px 0px #393939,
+        -9px 0px 0px #393939,
+        -10px 0px 0px #393939,
+        -11px 0px 0px #393939,
+        -12px 0px 0px #393939,
+        -13px 0px 0px #393939,
+        -14px 0px 0px #393939,
+        -15px 0px 0px #393939,
+        -16px 0px 0px #393939,
+        -17px 0px 0px #393939,
+        -18px 0px 0px #393939,
+        -19px 0px 0px #393939,
+        -20px 0px 0px #393939,
+        -21px 0px 0px #393939,
+        -22px 0px 0px #393939,
+        -23px 0px 0px #393939,
+        -24px 0px 0px #393939,
+        -25px 0px 0px #393939,
+        -26px 0px 0px #393939,
+        -27px 0px 0px #393939,
+        -28px 0px 0px #393939,
+        -29px 0px 0px #393939,
+        -30px 0px 0px #393939 ;
+        
+      }
+      to{
+        text-shadow: 1px 0px 0px #393939,
+        2px 0px 0px #393939,
+        3px 0px 0px #393939,
+        4px 0px 0px #393939,
+        5px 0px 0px #393939,
+        6px 0px 0px #393939,
+        7px 0px 0px #393939,
+        8px 0px 0px #393939,
+        9px 0px 0px #393939,
+        10px 0px 0px #393939,
+        11px 0px 0px #393939,
+        12px 0px 0px #393939,
+        13px 0px 0px #393939,
+        14px 0px 0px #393939,
+        15px 0px 0px #393939,
+        16px 0px 0px #393939,
+        17px 0px 0px #393939,
+        18px 0px 0px #393939,
+        19px 0px 0px #393939,
+        20px 0px 0px #393939,
+        21px 0px 0px #393939,
+        22px 0px 0px #393939,
+        23px 0px 0px #393939,
+        24px 0px 0px #393939,
+        25px 0px 0px #393939,
+        26px 0px 0px #393939,
+        27px 0px 0px #393939,
+        28px 0px 0px #393939,
+        29px 0px 0px #393939,
+        30px 0px 0px #393939;
+    }
+
+    
+}
+
+@keyframes turnNormal {
+    from{
+        text-shadow: 1px 0px 0px #393939,
+        2px 0px 0px #393939,
+        3px 0px 0px #393939,
+        4px 0px 0px #393939,
+        5px 0px 0px #393939,
+        6px 0px 0px #393939,
+        7px 0px 0px #393939,
+        8px 0px 0px #393939,
+        9px 0px 0px #393939,
+        10px 0px 0px #393939,
+        11px 0px 0px #393939,
+        12px 0px 0px #393939,
+        13px 0px 0px #393939,
+        14px 0px 0px #393939,
+        15px 0px 0px #393939,
+        16px 0px 0px #393939,
+        17px 0px 0px #393939,
+        18px 0px 0px #393939,
+        19px 0px 0px #393939,
+        20px 0px 0px #393939,
+        21px 0px 0px #393939,
+        22px 0px 0px #393939,
+        23px 0px 0px #393939,
+        24px 0px 0px #393939,
+        25px 0px 0px #393939,
+        26px 0px 0px #393939,
+        27px 0px 0px #393939,
+        28px 0px 0px #393939,
+        29px 0px 0px #393939,
+        30px 0px 0px #393939;
+    }
+
+    to{
+        text-shadow: 0px 0px 0px #393939;
+    }
+}
+
+.fade{
+    border-right: 0;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 1279px ) and (max-aspect-ratio: 1/1){
+
+    .container{
+        border-bottom: 2px solid #ffffff;
+        width: 100%;
+    }
+
+    .letterD{
+        display: block;
+        padding-right: 5vh;
+        padding-top: 6vh;
+        font-size: 55vh;
+        font-weight: 1000;
+        line-height: 70%;
+        max-height: 100%;
+        font-family: futuraBold, sans-serif;
+        color: #ffffff;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+    }
+}
